@@ -3,58 +3,30 @@
 <head>
 <title>welcomemovie</title>
 <meta charset="utf-8">
-<style>
-  h1{
-    font-size:60px;
-    text-align:center;
-    border:5px pink solid;
-    background-color: pink;
-    padding:30px;
-    margin: auto;
-    width:100%
-  }
-
-  h2{
-    font-size:38px;
-    text-align:center;
-  }
-  h3{
-    font-size:32px;
-    text-align:center;
-    border-bottom:2px #FA5858 solid;
-    border-top:2px #FA5858 solid;
-    background-color: #FA5858;
-    padding:10px;
-    margin:auto;
-    width:96%
-  }
-  ol{
-    font-size:26px;
-    list-style-position: inside;
-    padding:20px;
-    margin-bottom: 100px;
-  }
-  a{
-    color:purple;
-    text-decoration:none;
-  }
-  span{
-    background-color: grey;
-  }
-  body{
-      text-align:center;
-  }
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<h1><a href="index.html">The Movies</h1></a>
-<h2>살아있다(2020)</h2>
-<ol>
+  <input id="night_day" type="button" value="night" onclick="
+  if(document.querySelector('#night_day').value==='night') {
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    document.querySelector('#night_day').value='day';
+  } else {
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    document.querySelector('#night_day').value='night';
+  }
+  ">
+<h1 style="font-size:60px; text-align:center; border:5px pink solid; background-color:pink; padding:30px; margin:auto;width:100%"><a href="index.html">The Movies</h1></a>
+
+<ol class="list">
+  <h2>살아있다(2020)</h2><br>
   <a href="release.html"><li>Movie release</li></a>
   <a href="reviews.html"><li>Movie reviews</li></a>
 </ol>
 
+<div>
 <h3 style="color:white">Movie reviews</mark></h3>
 <br>
 <a href="https://search.naver.com/search.naver?where=post&sm=tab_jum&query=%23%EC%82%B4%EC%95%84%EC%9E%88%EB%8B%A4+%EB%A6%AC%EB%B7%B0" target="_blank"
@@ -83,5 +55,7 @@ structured corridor-type building system.
 <li>To express the digital age, there are a lot of factors such as concept of pro-youtuber, communication with SNS, utilization of drone at a time of crisis.</li>
   </ul>
 </ol>
+
+<div>
 </body>
 </html>

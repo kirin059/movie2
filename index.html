@@ -3,47 +3,37 @@
 <head>
 <title>welcomemovie</title>
 <meta charset="utf-8">
-<style>
-  h1{
-    font-size:60px;
-    text-align:center;
-    border:5px pink solid;
-    background-color: pink;
-    padding:30px;
-    margin:auto;
-    width:100%
-    }
-  h2{
-    font-size:38px;
-    text-align:center;
-    }
-  ol{
-    font-size:26px;
-    list-style-position: inside;
-    padding:20px;
-    margin-bottom: 80px;
-  }
-  a{
-    color:purple;
-    text-decoration:none;
-  }
-  body{
-      text-align:center;
-  }
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <input id="night_day" type="button" value="night" onclick="
+  if(document.querySelector('#night_day').value==='night') {
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    document.querySelector('#night_day').value='day';
+  } else {
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    document.querySelector('#night_day').value='night';
+  }
+  ">
+
 <h1 style="font-size:60px; text-align:center; border:5px pink solid; background-color:pink; padding:30px; margin:auto;width:100%"><a href="index.html">The Movies</h1></a>
 
-<h2>살아있다(2020)</h2>
-<ol>
+
+<ol class="list">
+  <h2>살아있다(2020)</h2><br>
   <a href="release.html"><li>Movie release</li></a>
   <a href="reviews.html"><li>Movie reviews</li></a>
 </ol>
-<p>
+
+<div>
+<p style="margin-top:30px;">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/ifyPEnKreJI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
-<img src="alive.jpg" width=800>
+<img src="alive.jpg" width=800 style="margin-top:30px;">
+</div>
+
 </body>
 </html>
