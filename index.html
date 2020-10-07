@@ -5,24 +5,23 @@
 <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
 
-<script>
-  window.onload = function() {
-  var button_obj = document.getElementById('buttion1');
-
-  button_obj.onclick = function () {
-  var msg = "hi";
-  alert(msg);
-  };
-  };
-</script>
-
-  <button id='buttion1'> Click </button>
-
 
 
 </head>
 
 <body>
+  <script>
+    window.onload = function() {
+    var button_obj = document.getElementById('buttion1');
+
+    button_obj.onclick = function () {
+    var msg = "hi";
+    alert(msg);
+    };
+    };
+  </script>
+  <button id='buttion1'> Click </button>
+
   <input id="night_day" type="button" value="night" onclick="
   if(document.querySelector('#night_day').value==='night') {
     document.querySelector('body').style.backgroundColor='black';
