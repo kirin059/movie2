@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>actor</title>
+<style>
+  *{
+    margin:0;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  a:active{
+    text-decoration: underline;
+  }
+ .container{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 210px 4fr 1fr;
+   }
+  .subject{
+   grid-column-start: 1;
+   grid-column-end: 3;
+   grid-row-start: 1;
+   grid-row-end: 2;
+   text-align: center;
+   border-bottom:1px solid black;
+   padding-top: 50px;
+   font-size: 30px;
+   background-image:url('bg.jpg');
+   filter: grayscale(100%);
+   }
+   .left{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    border-right:1px solid black;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    font-size: 30px;
+    background-image:url('1.jpg');
+    background-repeat : no-repeat;
+    background-size : cover;
+    }
+    .right{
+     grid-column-start: 2;
+     grid-column-end: 3;
+     grid-row-start: 2;
+     grid-row-end: 3;
+     text-align: center;
+     padding-top: 300px;
+     padding-bottom: 300px;
+     font-size: 30px;
+     background-image:url('2.jpg');
+     background-repeat : no-repeat;
+     background-size : cover;
+     }
+     .footer{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      border-top:1px solid black;
+      }
+      span{
+        width:5px;
+      }
+</style>
+</head>
+
+<body>
+
+
+  <input type="button" value="night" onclick="
+  var target=document.querySelector('body');
+  if(this.value==='night'){
+    target.style.backgroundColor='black';
+    target.style.color='white';
+    this.value='day';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while ( i < alist.length) {
+      alist[i].style.color = 'powderblue';
+      i = i + 1;
+    }
+
+  } else{
+    target.style.backgroundColor='white';
+    target.style.color='black';
+    this.value='night';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while ( i < alist.length) {
+      alist[i].style.color = 'blue';
+      i = i + 1;
+    }
+  }
+  ">
+
+    <script>
+  var addOne=function(x) {
+    var y=x+1;
+    return y;
+  };
+  var A=addOne(9)
+    </script>
+
+
+<div class="container">
+  <div class="subject">
+    <h1><a href="index.html">Jullia Roberts</a></h1>
+  </div>
+
+  <div class="left">
+    <h2><a href="profile.html"> Profile</a></h2>
+  </div>
+
+  <div class="right">
+    <h2><a href="work.html">Representative work</a></h2>
+  </div>
+
+  <div class="footer">
+    <script>
+      function button_enent(){
+        if(confirm('go to the next page') == true){
+          location.replace('profile.html');
+
+      } else {
+        return;
+        }
+      }
+    </script>
+
+    <input type="button" value="next" onclick="button_enent()">
+  </div>
+
+
+</div>
+</body>
+</html>
