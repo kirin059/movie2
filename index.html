@@ -4,7 +4,7 @@
 <title>welcomemovie</title>
 <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-
+    <script src="color.js"></script>
 </head>
 
 <body>
@@ -13,60 +13,33 @@
     var button_obj = document.getElementById('buttion1');
 
     button_obj.onclick = function () {
-    var msg = "hi";
+    var msg = "welcome to the movie world";
     alert(msg);
     };
     };
   </script>
+
     <button id='buttion1'> Click </button>
 
+    <input type="button" value="night" onclick="
+      var target=document.querySelector('body')
+      handler(this);
+     ">
 
-
-  <input type="button" value="night" onclick="
-  if(this.value==='night') {
-    document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';
-    this.value='day';
-  } else {
-    document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body').style.color='black';
-    this.value='night';
-  }
-  ">
-
-  <input type="button" value="night" onclick="
-  var target= document.querySelector('body')
-  if(this.value==='night') {
-    target.style.backgroundColor='black';
-    target.style.color='white';
-    this.value='day';
-  } else {
-    target.style.backgroundColor='white';
-    target.style.color='black';
-    this.value='night';
-  }
-  ">
 <div class="container">
   <div class="subject">
-    <h1 style="font-size:60px; text-align:center; padding:45px; margin:auto;width:100%"><a id="first" href="index.html">The Movies</a></h1>
+    <h1>The Movies</h1>
   </div>
 
-<ol class="list">
-  <h2 style="margin-bottom:15px;">살아있다(2020)</h2>
-  <a href="release.html"><li>Movie release</li></a>
-  <a href="reviews.html"><li>Movie reviews</li></a>
-</ol>
-</div>
-
-<div class="article1">
-  <p style="margin-top:30px;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/ifyPEnKreJI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </p>
-</div>
-
-<div class="article2">
-  <img src="alive.jpg" style="margin-top:30px;">
-</div>
+  <div class="main-list">
+    <ol>
+      <h2 style="margin-bottom:40px;">Movie List</h2>
+      <a href="index1.html"><li>살아있다(2020)</li></a>
+      <a href="index2.html"><li>1987(2017)</li></a>
+      <a href="index3.html"><li>우리 생애 최고의 순간(2007)</li></a>
+      <a href="index4.html"><li>The post(2007)</li></a>
+    </ol>
+  </div>
 
 </div>
 </body>
