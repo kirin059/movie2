@@ -5,21 +5,21 @@
 <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <script src="color.js"></script>
+
 </head>
 
 <body>
-  <script>
-    window.onload = function() {
-    var button_obj = document.getElementById('buttion1');
 
-    button_obj.onclick = function () {
-    var msg = "welcome to the movie world";
-    alert(msg);
-    };
-    };
-  </script>
-
-    <button id='buttion1'> Click </button>
+  <input type="button" value="끝말잇기" onclick="
+  var word='movie'
+  while(true){
+    var answer=prompt(word)
+    if(word[word.length-1]===answer[0]){
+      word=answer;
+    }else{
+      alert('write again')
+   }
+ ">
 
     <input type="button" value="night" onclick="
       var target=document.querySelector('body')

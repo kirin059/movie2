@@ -97,4 +97,7 @@
       font-size: 18px;
       padding: 0px;
     }
+    textarea{
+      cols:80; 
+      }
   }
